@@ -1,0 +1,194 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CheckList</title>
+        <link hel="stylesheet" type="text/css" href="./Css_CheckList-v01.css" media="screen">
+       
+        <style>
+            
+#loguinho{
+    position: absolute;
+    left: 44.4%;
+    top: 1%;
+    width: 30%;
+    height: 30%;
+
+
+}
+
+#login-box{
+    background-color: #032d50;
+    width:380px;
+    height: 260px;
+    margin:140px auto 0px;
+    border-radius: 5px;
+    opacity: 30;
+}
+#login-box-interno{
+    background-image:  url(http://177.101.172.48/icon_pref.png);
+    background-position: 90% 48%;
+    background-repeat: no-repeat;
+    background-size: 30% 40%;
+    width:360px;
+    height: 240px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow:0px 0px 5px black;
+    overflow: hidden;
+}
+#login-box-label{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f2f2+0,98c4d6+99 */
+background: #f1f1f1; /* Old browsers */
+background: -moz-linear-gradient(top,  #f2f2f2 0%, #98c4d6 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f2f2f2 0%,#98c4d6 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f2f2f2 0%,#98c4d6 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#98c4d6',GradientType=0 ); /* IE6-9 */
+
+
+    border-bottom: 1px solid white;
+    box-shadow: 1px 0px 3px black;
+    text-shadow: 1px 0px 1px rgb(7, 4, 4);
+    height: 45px;
+    text-align: center;
+    font-family: calibri,Helvetica ;
+    font:bold 14px/45px  sans-serif;
+    color:rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.input-div{
+    margin: 20px;
+    padding: 5px;
+    /*background-color: #f2f5f7;*/
+    border-radius: 5px;
+    opacity: 100%;
+    border-color: black;
+    right: 20%;
+    top: 4%;
+    position: relative;
+        
+}
+.input-div input{
+    width: 190px;
+    height: 35px;
+    padding-left: 5px;
+    font:normal 13px sans-serif;
+    color:#0c0808;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline:none;
+    
+}
+/*#bfc4c6*/
+.imput-div:hover{
+    background-color: #e0f1fc;
+}
+.imput-div:hover input{
+    border-color: #7dc6dd;
+}
+#input-senha{
+    margin-top: -10px;
+}
+#botoes{
+    width: 310px;
+    margin-left: 25px;
+}
+#botao{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ccd9ea+0,f9f9f9+2,5c86a8+100 */
+background: #2073e0; /* Old browsers */
+background: -moz-linear-gradient(top,  #ccd9ea 0%, #f9f9f9 2%, #5c86a8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ccd9ea 0%,#f9f9f9 2%,#5c86a8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ccd9ea 0%,#f9f9f9 2%,#5c86a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccd9ea', endColorstr='#5c86a8',GradientType=0 ); /* IE6-9 */
+
+    float: right;
+    background-color: 25DBF8;
+    padding: 5px 15px;
+    font:bold 12px sans-serif;
+    border-radius: 20px;
+    text-shadow: 0px 1px width;
+    border:1px solid #9eb9c3;
+
+}
+#botao:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5c86a8+0,f9f9f9+98,ccd9ea+100 */
+background: #5c86a8; /* Old browsers */
+background: -moz-linear-gradient(top,  #5c86a8 0%, #f9f9f9 98%, #ccd9ea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5c86a8 0%,#f9f9f9 98%,#ccd9ea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5c86a8 0%,#f9f9f9 98%,#ccd9ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c86a8', endColorstr='#ccd9ea',GradientType=0 ); /* IE6-9 */
+
+    cursor: pointer;
+}
+#lembrar-senha{
+    font: normal 12px sans-serif;
+    position: absolute;
+    left: 0%;
+}
+
+body{
+    background-image: url(https://www.paulista.pe.gov.br/site/css/img/bg-html.png);
+ 
+}
+
+        </style>
+
+      </head>
+        <body>
+            
+            	        
+            <div id="login-box">
+                
+                    <div id="login-box-interno">
+                        <div id="login-box-label"> Login Sistema CheckList
+                            <div class="input-div" id="input-usuario">
+                                <input id="mat" type="text" name="Matricula" >
+                            </div>
+                            <div class="input-div" id="input-senha">
+                                <input id="senha" type="password" name="Senha">
+                            </div>
+                           
+                            <div id="botoes">
+                                  
+                                <div id="botao" onclick="funcao()">Login</div>
+                                <div id="lembrar-senha"> 
+                                    <input type="checkbox"/> Salvar dados
+                                    <div>right 10%</div>
+                                    <p id="ti"></p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+            <script>
+            
+                function funcao(){
+                    var h = document.getElementById("senha").value;
+                    var y = document.getElementById("mat").value;
+                    
+                    if (y == "matricula" && h == "senha"){
+                        t = "login ok";
+                    }
+                    else {
+                        t = "senha/login incorreto";
+                    }
+                    document.getElementById("ti").innerHTML = t
+                    if (t == "login ok"){
+                        window.location.href ="C:/Users/Luis Henrique/Desktop/site2/HTMLPage2.html"
+                    }
+                        
+                }	
+            
+    
+    
+            </script>
+        </body>
+    </html>
